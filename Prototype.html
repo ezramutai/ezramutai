@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page title | Angular Prototype</title>
+  <link rel="stylesheet" href="Prototype.css">
+</head>
+<body>
+
+  <!-- nav component -->
+  <nav>
+    <li><a routerLink="/home">HOME</a></li>
+    <li><a routerLink="/about">ABOUT</a></li>
+    <li><a routerLink="/services">OUR SERVICES</a></li>
+    <li><a routerLink="/blog">BLOG</a></li>
+    <li><a routerLink="/settings">SETTINGS</a></li>
+    <li><button onclick="toggleTheme()">Toggle Theme</button></li>
+  </nav>
+  <hr />
+  <!-- end of nav component -->
+
+  <!-- Home component -->
+  <div class="homepage">
+    <aside>
+      <h1>Welcome to my homepage</h1>
+      <p>We make stunning and up-to-the-point satisfying websites.</p>
+      <p>
+        Here, I will update my learning progress and make my repo public for
+        viewing. Don't hesitate to give credit and constructive criticism.
+      </p>
+      <p>
+        With prior knowledge of HTML, CSS and Javascript, my journey will be
+        seamless with the help of senior developers of the same field. Happy
+        coding fam.
+      </p>
+      <p>Wanna connect with me?</p>
+      <button routerLink="/contact">Contact me</button>
+    </aside>
+
+    <aside class="logo">
+      <img src="logo.jpg" alt="my-logo" />
+    </aside>
+  </div>
+  <hr />
+
+  <!-- About component -->
+  <div class="about">
+    <h1>About Kiprop Mutai</h1>
+    <h2>Brief Autobiography</h2>
+    <p>
+      Kiprop Mutai is a web developer inspired by curiosity of how web content
+      is rendered and the skills required.
+    </p>
+    <p>Born in Kipkeremwo, Chepseon, Kericho County.</p>
+    <p>
+      Studied at Kipkeremwo Primary, Tugunon Day Secondary and Karatina
+      University.
+    </p>
+
+    <h2>About my personal blogsite</h2>
+    <p>
+      I made this for updating my learning progress on Angular, while
+      integrating HTML, CSS and Javascript.
+    </p>
+
+    <h2>What skills I already have</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Now Angular - progressing</li>
+    </ul>
+
+    <h2>What I can do now</h2>
+    <ul>
+      <li>Write creative web content</li>
+      <li>Render clean appealing HTML content</li>
+      <li>Use CSS and @media queries effectively</li>
+      <li>Use Javascript with minimal errors/bugs</li>
+    </ul>
+
+    <h2>What I anticipate to do</h2>
+    <ul>
+      <li>Perfect my HTML and CSS</li>
+      <li>Progressively learn more Javascript</li>
+      <li>Perfect progress on Angular</li>
+      <li>Backend Node.js</li>
+      <li>MongoDB database</li>
+      <li>Python</li>
+    </ul>
+    <p>Wanna team up and progress with me?</p>
+    <button>Contact me</button>
+    <p>Any question/comment?</p>
+    <textarea></textarea><br />
+    <button>Submit</button>
+  </div>
+  <hr />
+
+  <!-- Services component -->
+  <section>
+    <h1>What I can do for you</h1>
+    <ul>
+      <li>Write HTML prototypes</li>
+      <li>Style your web - UI/UX progressing</li>
+      <li>Git and Github version control</li>
+      <li>Share current ever-growing knowledge</li>
+      <li>Learn Angular with you</li>
+    </ul>
+    <p>Wanna offer me a gig?</p>
+    <button routerLink="/contact">Hire me</button>
+  </section>
+  <hr />
+
+  <!-- Contact component -->
+  <section>
+    <p>Please do not hesitate to click any of these buttons if you want to reach out:</p>
+    <ul>
+      <li><button>Facebook</button></li>
+      <li><button>Instagram</button></li>
+      <li><button>Github</button></li>
+      <li><button>Call me</button></li>
+    </ul>
+    <p>Or</p>
+    <p>Send me a message</p>
+    <textarea></textarea><br />
+    <button>Send</button>
+  </section>
+  <hr />
+
+  <!-- Blog component -->
+  <section>
+    <h1>My personal blog</h1>
+    <textarea id="blog-input"></textarea><br />
+    <button>Update</button>
+    <p>
+      <strong>Kindly</strong>, do not type anything here because it's my
+      personal blog update. Just <strong>watch</strong> my progress if you're
+      really interested.
+    </p>
+  </section>
+
+  <!-- JavaScript Theme Toggle -->
+  <script type="text/javascript" src="prototype.js"></script>
+</body>
+</html>
