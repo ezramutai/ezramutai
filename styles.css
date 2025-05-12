@@ -76,14 +76,19 @@ button:hover {
 }
 
 /* ========== Responsive Image ========== */
-.logo img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
 /* ========== Sections ========== */
@@ -97,8 +102,7 @@ section, .about {
 
 /* ========== Headings ========== */
 h1 {
-  color: var(--button-bg);
-  margin-bottom: 15px;
+  color: var(--button-bg);  margin-bottom: 15px;
 }
 
 h2 {
@@ -146,10 +150,12 @@ textarea {
     text-align: center;
   }
 
-  .logo img {
-    max-width: 90%;
+@media (max-width: 500px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
   }
-
+}
   button {
     width: 100%;
     font-size: 1.1rem;
