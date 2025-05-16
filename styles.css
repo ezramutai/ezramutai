@@ -102,7 +102,8 @@ section, .about {
 
 /* ========== Headings ========== */
 h1 {
-  color: var(--button-bg);  margin-bottom: 15px;
+  color: var(--button-bg);
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -149,13 +150,14 @@ textarea {
     width: 100%;
     text-align: center;
   }
+}
 
 @media (max-width: 500px) {
   .profile-pic {
     width: 100px;
     height: 100px;
   }
-}
+
   button {
     width: 100%;
     font-size: 1.1rem;
